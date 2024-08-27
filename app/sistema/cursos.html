@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #141414;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin-right: 50px;
+    padding: 0;
+    font-size: 20px;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.banner p {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+main {
+    padding: 100px 20px 20px;
+}
+
+.courses {
+    padding: 20px 0;
+}
+
+.courses h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.course-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course-item {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.course-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.course-item h3 {
+    margin: 10px 0 0;
+}
+
+.about, .contact {
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Serralheria</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="banner">
+            <div class="banner-content">
+                <h1>Aprenda Serralheria com os Melhores</h1>
+                <p>Especialize-se e garanta seu futuro profissional.</p>
+            </div>
+        </section>
+
+        <section id="cursos" class="courses">
+            <h2>Cursos Populares</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <img src="curso1.jpg" alt="Curso Básico de Serralheria">
+                    <h3>Curso Básico de Serralheria</h3>
+                </div>
+                <div class="course-item">
+                    <img src="curso2.jpg" alt="Curso Avançado de Serralheria">
+                    <h3>Curso Avançado de Serralheria</h3>
+                </div>
+                <div class="course-item">
+                    <img src="curso3.jpg" alt="Curso de Soldagem">
+                    <h3>Curso de Soldagem</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="about">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma instituição com mais de 20 anos de experiência na formação de serralheiros qualificados.</p>
+        </section>
+
+        <section id="contato" class="contact">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações:</p>
+            <ul>
+                <li>Email: contato@cursosdeserralheria.com</li>
+                <li>Telefone: (11) 1234-5678</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cursos de Serralheria. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

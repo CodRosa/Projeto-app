@@ -1,0 +1,20 @@
+<button class="import-btn" onclick="document.getElementById('fileInput').click();" style="margin-top: -70px;">Importar Arquivo</button>
+<input type="file" id="fileInput" onchange="handleFileSelect(event)" style="display: none;">
+<div id="fileInfo"></div>
+</div>
+
+<script>
+  function handleFileSelect(event) {
+const file = event.target.files[0];
+if (file) {
+const fileInfo = document.getElementById('fileInfo');
+fileInfo.innerHTML = `<p>Nome do arquivo: ${file.name}</p>
+                      <p>Tamanho do arquivo: ${file.size} bytes</p>
+                      <p>Tipo do arquivo: ${file.type}</p>`;
+}
+}
+
+</script>
+
+
+</div>
